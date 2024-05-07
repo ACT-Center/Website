@@ -58,20 +58,13 @@ const Body = () => {
         periods. A proposal will be accepted if it is graded with more than 40
         points and it does not score 0 in any of the criteria{" "}
         <a target="_blank" href="https://drive.google.com/file/d/1P3tTYSvEnoCUiZcnZCWML3avB7mQGIN1/view?usp=sharing" className="genlink">Evaluation Matrix.</a>
-        {" "}The proposals must be uploaded using submission link (add submission
-        link here) on ACT website
-      </p>
-      
-      <br />
-
-      <p>
-        A proposal will be accepted if it is graded with more than 40 points and
-        it does not score 0 in any of the criteria. The proposals must be
-        uploaded to www.act.thapar.edu
+        {" "}The proposals must be uploaded using submission form on ACT website
       </p>
 
       <h1>Submission Form</h1>
-      <form action="" className="submissionForm">
+
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeq_RQ5pVOLZ0vaclfxjRsqknC8nScoI-5hH4mpeen0oheGNQ/viewform?embedded=true" width="100%" height="1600px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      {/* <form action="" className="submissionForm">
         <div className="row">
           <div className="col">
             <input type="text" name="" id="" placeholder="Full Name" />
@@ -116,7 +109,7 @@ const Body = () => {
           </div>
         </div>
 
-      </form>
+      </form> */}
     </div>
   );
 };

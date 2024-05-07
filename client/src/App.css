@@ -21,6 +21,7 @@ body {
   overflow-x: hidden;
   font-family: "Jost";
   font-weight : 450;
+  background-color: var(--lightbg);
 }
 @media (min-width: 768px) {
   body {
