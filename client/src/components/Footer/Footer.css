@@ -76,3 +76,13 @@
     height: 400px;
     width: 400px;
 }
+
+.footerLogos{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.footerLogos > img{
+    height: 50px;
+    filter: brightness(100);
+}

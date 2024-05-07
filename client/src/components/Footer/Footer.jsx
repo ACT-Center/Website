@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Footer.css"
+import tiet from "../../assets/tiet.png"
+import tslas from "../../assets/tslas.png"
 
 export default function Footer() {
     let copyright = String.fromCodePoint(0x00A9);
@@ -38,6 +40,11 @@ export default function Footer() {
             Bhadson Rd, Adarsh Nagar, <br />
             Patiala, Punjab 147004
             </p>
+            
+            <div className="footerLogos">
+                <img src={tiet} alt="" />
+                <img src={tslas} alt="" />
+            </div>
         </div>
     </div>
 
