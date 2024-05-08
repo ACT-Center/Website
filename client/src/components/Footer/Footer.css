@@ -5,12 +5,12 @@
     color: white;
 
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
 
     padding: 60px 50px;
-    gap: 40px;
-    padding-right: 300px;
+    gap: 60px;
+    /* padding-right: 300px; */
 }
 
 .subfooter{
@@ -30,8 +30,7 @@
 }
 
 .footerColumn{
-    width: fit-content;
-    flex-grow: 1;
+    /* width: 30%; */
     height: 100%;
 }
 
@@ -53,16 +52,17 @@
 
 .footerColumn > p{
     font-family: "Jost", sans-serif;
+    text-wrap: wrap;
     font-size: 0.8em;
+    width: 100%;
 }
 
 .footerColumn:nth-of-type(1) > p:nth-of-type(1){
-    margin-top: -30px;
+    margin-top: -1.2lh;
 }
 
 .footerColumn > p:nth-of-type(2){
     margin-top: 30px;
-    width: 400px;
 }
 
 .sideElement{

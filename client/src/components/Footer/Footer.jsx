@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="footerColumn">
             <h3>ACT CENTER</h3>
             <p>Thapar School of Liberal Art and Sciences (TSLAS)</p>
-            <p>Transdisciplinary collaboration is not just encouraged but embedded in our educational and research culture</p>
+            <p>Transdisciplinary collaboration is not just encouraged <br /> but embedded in our educational and research culture</p>
             <br />
             <p>Reach out to us at: act@thapar.edu</p>
         </div>
@@ -46,7 +46,7 @@ export default function Footer() {
                 <img src={tslas} alt="" />
             </div>
         </div>
-        
+
     </div>
 
     <div className="subfooter">
