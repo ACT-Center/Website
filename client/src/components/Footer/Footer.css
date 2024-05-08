@@ -1,14 +1,15 @@
 .footer{
+    width: 100%;
     position: relative;
-    height: 350px;
     background-color: black;
     color: white;
 
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     padding: 60px 50px;
-    gap: 80px;
+    gap: 40px;
     padding-right: 300px;
 }
 
@@ -29,6 +30,8 @@
 }
 
 .footerColumn{
+    width: fit-content;
+    flex-grow: 1;
     height: 100%;
 }
 

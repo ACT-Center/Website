@@ -46,6 +46,7 @@ export default function Footer() {
                 <img src={tslas} alt="" />
             </div>
         </div>
+        
     </div>
 
     <div className="subfooter">
