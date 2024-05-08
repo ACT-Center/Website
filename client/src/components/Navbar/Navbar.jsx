@@ -8,6 +8,7 @@ export default function NavBar() {
     return (
         <div className='navbar'>
             <div className="logo">
+                <img src={logo} alt="" />
                 ACT CENTER
             </div>
             <div className="navMenu">
