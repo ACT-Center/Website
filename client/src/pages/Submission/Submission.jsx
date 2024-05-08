@@ -62,54 +62,6 @@ const Body = () => {
       </p>
 
       <h1>Submission Form</h1>
-
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeq_RQ5pVOLZ0vaclfxjRsqknC8nScoI-5hH4mpeen0oheGNQ/viewform?embedded=true" width="100%" height="1600px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      {/* <form action="" className="submissionForm">
-        <div className="row">
-          <div className="col">
-            <input type="text" name="" id="" placeholder="Full Name" />
-          </div>
-
-          <div className="col">
-            <input type="text" name="" id="" placeholder="Email" />
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col">
-            <input type="text" name="" id="" placeholder="Project Title" />
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col">
-            <input type="text" name="" id="" placeholder="Keywords" />
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Abstract"></textarea>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col" style={{ position: "relative" }}>
-            <label htmlFor="">
-            </label>
-            <input type="file" placeholder="File Submission" className="fileinput" />
-          </div>
-
-          <div className="col">
-            <input type="file" placeholder="Supplementary Material" />
-          </div>
-
-          <div className="col">
-            <button className="button">Submit</button>
-          </div>
-        </div>
-
-      </form> */}
     </div>
   );
 };
