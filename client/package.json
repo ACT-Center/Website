@@ -29,5 +29,9 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "sass": "^1.72.0",
     "vite": "^5.2.0"
-  }
+  },
+  "description": "This is the official website of ACT.",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC"
 }

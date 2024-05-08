@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     background-color: var(--lightbg);
     /* background-color: transparent; */
     width: 100%;
@@ -8,7 +8,7 @@
     top: 0;
     z-index: 100;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    
+
     transition-duration: 500ms;
     transition-property: height;
 }
@@ -17,17 +17,28 @@
     height: 90px;
 } */
 
-.logo{
+.logo {
+    width: 25%;
     display: flex;
-    align-items: center;
-    justify-content: left;
-    padding-left: 50px;
     flex-grow: 1;
-
     font-family: "Koulen", sans-serif;
     text-transform: uppercase;
-    font-size: 1.5em;
+}
 
+.imglogo {
+    height: 60px;
+    width: 100%;
+}
+
+.textlogo {
+    width: 75%;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.logo > img{
+    height: 100%;
+    mix-blend-mode: darken;
 }
 
 .logo > img{
@@ -50,7 +61,7 @@
     clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.navMenuItem{
+.navMenuItem {
     color: white;
     font-family: "Koulen", sans-serif;
     text-transform: uppercase;
@@ -67,14 +78,14 @@
     transition-duration: 200ms;
 }
 
-.navMenuItem:hover{
+.navMenuItem:hover {
     background-color: var(--yellow);
 }
 
-.navMenu:hover > .navMenuItem:not(:hover){
+.navMenu:hover>.navMenuItem:not(:hover) {
     opacity: 50%;
 }
 
-a{
+a {
     text-decoration: none;
 }
