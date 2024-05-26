@@ -12,7 +12,7 @@ export default function Footer() {
         {/* <div className="sideElement"></div> */}
 
         <div className="footerColumn">
-            <h3>ACT CENTER</h3>
+            <h3>ACT CENTRE</h3>
             <p>Thapar School of Liberal Art and Sciences (TSLAS)</p>
             <p>Transdisciplinary collaboration is not just encouraged <br /> but embedded in our educational and research culture</p>
             <br />

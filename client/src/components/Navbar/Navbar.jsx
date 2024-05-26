@@ -9,7 +9,7 @@ export default function NavBar() {
         <div className='navbar'>
             <div className="logo">
                 <img src={logo} alt="" />
-                ACT CENTER
+                ACT CENTRE
             </div>
             <div className="navMenu">
                 <a className='navMenuItem' href='/'>Home</a>
