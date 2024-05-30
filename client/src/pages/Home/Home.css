@@ -1,9 +1,11 @@
 .hero{
     display: flex;
-    height: 130vh;
+    flex-wrap: wrap;
+    /* height: 130vh; */
     background-image: url("../../assets/landingBG3.jpg");
     background-size: cover;
     clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+    padding-bottom: 250px;
 }
 
 a{
@@ -65,6 +67,8 @@ a{
 }
 
 .homeRight{
+    /* background-color: aliceblue; */
+    flex-grow: 1;
     height: inherit;
     display: flex;
     padding-top: 150px;
@@ -184,6 +188,9 @@ a{
 
 .homeInterestAreaCont{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 100px;
 
     margin-top: 50px;
@@ -242,7 +249,7 @@ a{
 /*four*/
 
 .homeVideos{
-    height: 200vh;
+    /* height: 200vh; */
     background-color: var(--lightbg);
     margin-top: -250px;
     padding-top: 250px;
@@ -251,20 +258,31 @@ a{
 .homeVideoSection{
     width: 100%;
     display: flex;
+    flex-direction: row;
     gap: 100px;
-
     margin-top: 100px;
 }
 
 .homeVideoSectionText{
     flex-grow: 1;
-    width: 50%;
+    width: 30%;
 
     font-family: "Jost";
+    text-align: justify;
 
     display: flex;
+    align-self: flex-start;
     flex-direction: column;
     justify-content: center;
+}
+
+
+.homeVideoSectionText:nth-of-type(1){
+    margin-left: 50px
+}
+
+.homeVideoSectionText:nth-of-type(2){
+    margin-right: 50px
 }
 
 .homeVideoSectionText > h3{
@@ -291,7 +309,8 @@ a{
 
 .homeVideoSectionVideo{
     flex-grow: 1;
-    width: 50%;
+    /* width: 50%; */
+    align-self: flex-end;
     height: 400px;
     background-color: rgb(133, 133, 133);
 }
@@ -354,4 +373,84 @@ a{
 .homeTeamMember > h3{
     margin-top: 10px;
     text-align: center;
+}
+
+
+@media (max-width: 1280px) {
+    .homeVideoSection{
+        width: 100%;
+        display: flex;
+        /* flex-direction: column-reverse; */
+        margin-top: 100px;
+    }
+}
+@media (max-width: 1024px) {
+
+    .homeLeft{
+        width: 100%;
+        padding: 0px 5vw;
+        padding-top: 150px;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homeLeft > p{
+        text-align: center;
+    }
+    
+    .homeRight{
+        width: 100%;
+        padding: 0px 5vw;
+        padding-top: 150px;
+    }
+
+    .submissionCall{
+        align-items: center;
+    }
+
+    .submissionCall > p{
+        text-align: center;
+    }
+
+    .homeVideoSection:nth-of-type(1){
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 100px;
+        gap: 0px;
+    }
+
+    .homeVideoSection:nth-of-type(2){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        gap: 0px;
+    }
+
+    .homeVideoSectionVideo{
+        width: calc(100% - 15vh);
+        margin: auto;
+    }
+
+    .homeVideoSectionText{
+        width: calc(100% - 15vh);
+        margin: auto;
+        text-align: justify;
+    }
+}
+@media (max-width: 768px) {
+    .homeVideoSection{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+
+    .homeVideoSectionVideo{
+        width: calc(100% - 5vh);
+        height: 300px;
+        margin: auto;
+    }
 }
