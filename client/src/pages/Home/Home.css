@@ -1,4 +1,4 @@
-.hero{
+.hero {
     display: flex;
     flex-wrap: wrap;
     /* height: 130vh; */
@@ -8,17 +8,17 @@
     padding-bottom: 250px;
 }
 
-a{
+a {
     color: inherit;
     background-color: inherit;
 }
 
-.homeLeft{
+.homeLeft {
     /* background-color: antiquewhite; */
     /* background-image: url("../../assets/landingBG2.jpg");
     background-size: cover;
     clip-path: polygon(44% 0, 100% 75%, 64% 100%, 0% 100%, 0 0); */
-    
+
     height: inherit;
     /* background-color: aliceblue; */
     color: white;
@@ -28,12 +28,11 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: start;
-
     padding-top: 150px;
     padding-left: 50px;
 }
 
-.homeLeft > h1{
+.homeLeft>h1 {
     color: white;
     font-size: 7em;
     line-height: 0.8em;
@@ -42,7 +41,9 @@ a{
     text-shadow: 0px 0px 5px rgb(0, 0, 0)
 }
 
-.homeLeft > h3{
+
+
+.homeLeft>h3 {
 
     margin-top: 0px;
     padding-top: 0px;
@@ -52,10 +53,9 @@ a{
     font-family: "Koulen";
     font-weight: 400;
     text-shadow: 0px 0px 5px rgb(0, 0, 0)
-
 }
 
-.homeLeft > p{
+.homeLeft>p {
     font-family: "Lato";
     font-size: 0.8em;
     margin-top: 20px;
@@ -66,18 +66,40 @@ a{
     text-shadow: 2px 0px 5px rgb(0, 0, 0)
 }
 
-.homeRight{
+.homeRight {
     /* background-color: aliceblue; */
     flex-grow: 1;
     height: inherit;
     display: flex;
+    justify-content: center;
     padding-top: 150px;
     padding-left: 150px;
 }
 
 
-.submissionCall{
-    
+@media screen and (max-width: 515px) {
+
+    .homeLeft>h1 {
+        font-size: 5em;
+        line-height: 0.8em;
+        letter-spacing: 10px;
+    }
+
+    .homeLeft>h3 {
+        word-spacing: 2.5px;
+        letter-spacing: 2.5px;
+        font-weight: 300;
+    }
+
+    .homeLeft>p {
+        font-size: 0.7em;
+        width: 80vw;
+    }    
+}
+
+
+.submissionCall {
+
     position: relative;
     display: flex;
     flex-direction: column;
@@ -94,28 +116,45 @@ a{
     transition-duration: 200ms;
 }
 
+@media screen and (max-width : 1200px) {
+    .hero {   
+        justify-content: center;
+        padding-bottom: 200px;
+    }
 
-.submissionCall:hover{
+    .homeLeft {
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: center;
+    }
+
+    .submissionCall {
+        align-items: center;
+    }
+}
+
+.submissionCall:hover {
     scale: 1.05;
 }
 
-.submissionCall > p{
+.submissionCall>p {
     font-size: 18px;
 }
 
-.submissionCall > div{
+.submissionCall>div {
     margin-top: 30px;
     display: flex;
     gap: 20px;
 }
 
-.homeButtonCont{
+.homeButtonCont {
     margin-top: 40px;
     display: flex;
     gap: 20px;
 }
 
-.homeButton{
+.homeButton {
     width: fit-content;
     font-family: "Jost";
     font-weight: 500;
@@ -129,22 +168,22 @@ a{
 }
 
 
-.homeButtonCont > .homeButton:nth-of-type(1){
+.homeButtonCont>.homeButton:nth-of-type(1) {
     background-color: var(--red);
     color: white;
 }
 
-.homeButtonCont > .homeButton:nth-of-type(2){
+.homeButtonCont>.homeButton:nth-of-type(2) {
     background-color: var(--yellow);
     color: black;
 }
 
-.homeButtonCont > a:nth-of-type(1) > .homeButton{
+.homeButtonCont>a:nth-of-type(1)>.homeButton {
     background-color: var(--red);
     color: white;
 }
 
-.homeButtonCont > a:nth-of-type(2) > .homeButton{
+.homeButtonCont>a:nth-of-type(2)>.homeButton {
     background-color: var(--yellow);
     color: black;
 }
@@ -160,7 +199,7 @@ a{
 
 
 /*two*/
-.homeInterestAreas{
+.homeInterestAreas {
     background-color: var(--lightbg);
     margin-top: -150px;
     padding-top: 300px;
@@ -171,22 +210,23 @@ a{
     align-items: center;
 }
 
-.homeInterestAreas > h1, h3{
+.homeInterestAreas>h1,
+h3 {
     font-family: "jost";
 }
 
-.homeInterestAreas > h1{
+.homeInterestAreas>h1 {
     font-weight: 550;
     font-size: 3em;
     margin-top: -10px;
 }
 
-.homeInterestAreas > h3{
+.homeInterestAreas>h3 {
     font-weight: 400;
     font-size: 1.5em;
 }
 
-.homeInterestAreaCont{
+.homeInterestAreaCont {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -196,7 +236,7 @@ a{
     margin-top: 50px;
 }
 
-.homeInterestArea{
+.homeInterestArea {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,17 +247,18 @@ a{
     width: 300px;
 }
 
-.homeInterestArea > img{
+.homeInterestArea>img {
     width: 120px;
 }
 
-.homeInterestArea > h3{
+.homeInterestArea>h3 {
     font-size: 1.5em;
     font-weight: 500;
 
     margin-top: 30px;
 }
-.homeInterestArea > p{
+
+.homeInterestArea>p {
     font-size: 0.8em;
     margin-top: 10px;
 }
@@ -232,7 +273,7 @@ a{
 
 /*three*/
 
-.homePoster{
+.homePoster {
     background-image: url("../../assets/landingBG1.jpg");
     background-size: cover;
     background-position: center;
@@ -248,14 +289,14 @@ a{
 
 /*four*/
 
-.homeVideos{
+.homeVideos {
     /* height: 200vh; */
     background-color: var(--lightbg);
     margin-top: -250px;
     padding-top: 250px;
 }
 
-.homeVideoSection{
+.homeVideoSection {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -263,7 +304,7 @@ a{
     margin-top: 100px;
 }
 
-.homeVideoSectionText{
+.homeVideoSectionText {
     flex-grow: 1;
     width: 30%;
 
@@ -277,25 +318,25 @@ a{
 }
 
 
-.homeVideoSectionText:nth-of-type(1){
+.homeVideoSectionText:nth-of-type(1) {
     margin-left: 50px
 }
 
-.homeVideoSectionText:nth-of-type(2){
+.homeVideoSectionText:nth-of-type(2) {
     margin-right: 50px
 }
 
-.homeVideoSectionText > h3{
+.homeVideoSectionText>h3 {
     font-size: 2em;
     font-weight: 500;
 }
 
-.homeVideoSectionText > p{
+.homeVideoSectionText>p {
     font-size: 0.75em;
     margin-bottom: 20px;
 }
 
-.homeVideoSectionText > button{
+.homeVideoSectionText>button {
     color: white;
 }
 
@@ -307,7 +348,7 @@ a{
     background-color: var(--yellow);
 }
 
-.homeVideoSectionVideo{
+.homeVideoSectionVideo {
     flex-grow: 1;
     /* width: 50%; */
     align-self: flex-end;
@@ -315,12 +356,12 @@ a{
     background-color: rgb(133, 133, 133);
 }
 
-.homeVideoSection > *{
+.homeVideoSection>* {
     width: 50%;
     height: 400px;
 }
 
-.homeTeam{
+.homeTeam {
     background-color: var(--lightbg);
     /* background-color: rgb(255, 0, 43); */
 
@@ -334,14 +375,14 @@ a{
     gap: 50px;
 }
 
-.homeTeamCont{
+.homeTeamCont {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 70px 100px;
 }
 
-.homeTeamMember{
+.homeTeamMember {
     height: 400px;
     width: 250px;
     background-color: rgb(212, 212, 212);
@@ -355,38 +396,52 @@ a{
     cursor: pointer;
 }
 
-.homeTeamMember:hover{
+.homeTeamMember:hover {
     transform: translateY(-10px);
     filter: brightness(90%);
 
     box-shadow: 0px 0px 20px 10px rgb(150, 150, 150);
-    
+
 }
 
-.homeTeamMember > img{
+.homeTeamMember>img {
     width: 100%;
     height: 60%;
     object-fit: cover;
-    object-position:top;
+    object-position: top;
 }
 
-.homeTeamMember > h3{
+.homeTeamMember>h3 {
     margin-top: 10px;
     text-align: center;
 }
 
 
 @media (max-width: 1280px) {
-    .homeVideoSection{
+    .homeVideoSection {
         width: 100%;
         display: flex;
         /* flex-direction: column-reverse; */
         margin-top: 100px;
     }
 }
-@media (max-width: 1024px) {
 
-    .homeLeft{
+@media (max-width: 1200px) {
+
+    .homeInterestAreas{
+        padding-top: 125px;
+        padding-bottom: 100px;
+    }
+
+    .homePoster{
+        height: 50vh;
+    }
+
+    .homeVideos{
+        margin-top: -300px;
+    }
+
+    .homeLeft {
         width: 100%;
         padding: 0px 5vw;
         padding-top: 150px;
@@ -395,25 +450,25 @@ a{
         align-items: center;
     }
 
-    .homeLeft > p{
+    .homeLeft>p {
         text-align: center;
     }
-    
-    .homeRight{
+
+    .homeRight {
         width: 100%;
         padding: 0px 5vw;
         padding-top: 150px;
     }
 
-    .submissionCall{
+    .submissionCall {
         align-items: center;
     }
 
-    .submissionCall > p{
+    .submissionCall>p {
         text-align: center;
     }
 
-    .homeVideoSection:nth-of-type(1){
+    .homeVideoSection:nth-of-type(1) {
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
@@ -421,7 +476,7 @@ a{
         gap: 0px;
     }
 
-    .homeVideoSection:nth-of-type(2){
+    .homeVideoSection:nth-of-type(2) {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -429,26 +484,27 @@ a{
         gap: 0px;
     }
 
-    .homeVideoSectionVideo{
+    .homeVideoSectionVideo {
         width: calc(100% - 15vh);
         margin: auto;
     }
 
-    .homeVideoSectionText{
+    .homeVideoSectionText {
         width: calc(100% - 15vh);
         margin: auto;
         text-align: justify;
     }
 }
+
 @media (max-width: 768px) {
-    .homeVideoSection{
+    .homeVideoSection {
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
         gap: 0px;
     }
 
-    .homeVideoSectionVideo{
+    .homeVideoSectionVideo {
         width: calc(100% - 5vh);
         height: 300px;
         margin: auto;

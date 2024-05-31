@@ -15,7 +15,7 @@ import Biblo from "./pages/Biblo/Biblo";
 const AppRoute = () => {
   return (
     <>
-    <NavBar/>
+    {/* <NavBar/> */}
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>

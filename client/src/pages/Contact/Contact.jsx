@@ -2,22 +2,22 @@ import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import Main from "../../components/Layout/Layout";
 import "./Contact.css";
-import nodemailer from 'nodemailer';
+// import nodemailer from 'nodemailer';
 
-const transporter = nodemailer.createTransport({
-    service: 'act@thapar.edu',
-    auth: {
-      user: 'act@thapar.edu',
-      pass: '',
-    },
-  });
+// const transporter = nodemailer.createTransport({
+//     service: 'act@thapar.edu',
+//     auth: {
+//       user: 'act@thapar.edu',
+//       pass: '',
+//     },
+//   });
 
-  const mailOptions = {
-    from: 'act@thapar.edu', // Sender's email address
-    to: 'act@thapar.edu', // Recipient's email address
-    subject: "" ,
-    html: ""
-  };
+//   const mailOptions = {
+//     from: 'act@thapar.edu', // Sender's email address
+//     to: 'act@thapar.edu', // Recipient's email address
+//     subject: "" ,
+//     html: ""
+//   };
 
 export default function Contact() {
     return (
