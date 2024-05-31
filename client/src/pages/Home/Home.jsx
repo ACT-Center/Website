@@ -85,7 +85,7 @@ export default function Home() {
             <div className="homeVideos">
 
                 <div className="homeVideoSection">
-                    <div className="homeVideoSectionText" style={{marginLeft: "50px"}}>
+                    <div className="homeVideoSectionText">
                         <h3>Trans-disciplinary Cooperation</h3>
                         <p>The Centre aims to facilitate collaboration among diverse faculties, breaking down traditional silos to encourage the convergence of ideas, methodologies, and expertise. By fostering a culture of collaboration, we foresee the emergence of innovative solutions to complex problems.</p>
 
@@ -100,7 +100,7 @@ export default function Home() {
                     <div className="homeVideoSectionVideo">
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Hr_48d8YKNw" title="ACT Centre: Introduction and Expectations" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <div className="homeVideoSectionText" style={{marginRight: "50px"}}>
+                    <div className="homeVideoSectionText">
                         <h3>Cutting-Edge Research</h3>
                         <p>At the core of ACT Centre's mission is the pursuit of research categorized by novelty and the potential for significant impact, aligning with Thapar’s commitment to academic excellence. The expectation for approved projects is the co-authoring of research papers publishable in peer-reviewed academic journals. Other forms of outcomes (artistic, practical, educational, etc.) could be secondary outcomes of research in the context of the ACT Centre.</p>
 
