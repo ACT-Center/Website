@@ -88,7 +88,7 @@ a {
     z-index: 1000;
     background-color: var(--lightbg);
 
-    height: 100svh;
+    height: 100%;
     width: 100%;
 
 }
