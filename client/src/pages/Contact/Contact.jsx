@@ -34,8 +34,8 @@ const Body = () => {
                 <h1>Get in touch</h1>
                 <p style={{marginTop: "-0.8lh", fontSize: "0.9em", marginBottom:"30px"}}>Write to us at: act@thapar.edu</p>
 
-                <div className="matrix">
-                    <div className="row">
+                <div className="matrix contact">
+                    <div className="row contact">
                         <div className="col">
                             <form action="">
                                 <input type="text" placeholder="Full Name" />
@@ -44,7 +44,7 @@ const Body = () => {
                                 <button className="button homeButton contactButton">Submit</button>
                             </form>
                         </div>
-                        <div className="col">
+                        <div className="col contactmap">
                             <MapContainer center={[30.3544242, 76.36670]} zoom={15} scrollWheelZoom={true}>
                                 <TileLayer
                                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
