@@ -21,7 +21,8 @@ const Body = () => {
      
     const form = useRef();
 
-function sendEmail() {
+function sendEmail(e) {
+    e.preventDefault();
     console.log("enter");
     emailjs
         .sendForm(serviceid, templateid , form.current, {
