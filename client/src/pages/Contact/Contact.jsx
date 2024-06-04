@@ -50,7 +50,7 @@ function sendEmail(e) {
                         <div className="col">
                             <form ref={form} onSubmit={sendEmail}>
                                 <input required type="text" placeholder="Full Name" name="user_name"/>
-                                <input required type="text" placeholder="Email" name="user_email"/>
+                                <input required type="email" placeholder="Email" name="user_email"/>
                                 <textarea required rows="10" placeholder="Message" name="message"></textarea>
                                 <input type="submit" className="button homeButton contactButton" />
                             </form>
