@@ -281,7 +281,18 @@ h3 {
 
     clip-path: polygon(100% 0, 100% 60%, 0 100%, 0 0);
 
+    color: white;
+    display: flex;
 
+    padding: 50px 100px;
+    padding-top: 150px;
+    font-size: 35pt;
+    font-family: 'jost';
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.homePoster > blockquote > span{
+    font-size: 20pt;
 }
 
 
@@ -365,7 +376,7 @@ h3 {
     background-color: var(--lightbg);
     /* background-color: rgb(255, 0, 43); */
 
-    padding: 100px 50px;
+    padding: 100px 100px;
 
     display: flex;
     flex-direction: column;

@@ -81,6 +81,12 @@ export default function Home() {
 
             <div className="homePoster">
 
+            <blockquote>
+                Education is not the learning of facts, <br /> 
+                but the training of the mind to think! <br />
+                <span>-- Albert Einstein</span>
+            </blockquote>
+
             </div>
 
             <div className="homeVideos">
