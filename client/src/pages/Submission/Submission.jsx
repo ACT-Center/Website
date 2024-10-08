@@ -57,7 +57,7 @@ const Body = () => {
         reporting must be in line with the project stages, divided into 6-month
         periods. A proposal will be accepted if it is graded with more than 40
         points and it does not score 0 in any of the criteria{" "}
-        <a target="_blank" href="https://drive.google.com/file/d/1P3tTYSvEnoCUiZcnZCWML3avB7mQGIN1/view?usp=sharing" className="genlink">Evaluation Matrix.</a>
+        <a target="_blank" href="https://drive.google.com/file/d/1MmToiKIbxGkR7LDoJCRiVWBDjdmJov3n/view" className="genlink">Evaluation Matrix.</a>
         {" "}The proposals must be uploaded using submission link (add submission
         link here) on ACT website
       </p>
