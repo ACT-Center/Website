@@ -38,12 +38,12 @@
     background-color: var(--red);
     /* background-color: transparent; */
     margin-left: auto;
-    width: 78%;
+    width: 85%;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 100px;
+    padding-left: 75px;
     padding-right: 50px;
 
     clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 0% 100%);
