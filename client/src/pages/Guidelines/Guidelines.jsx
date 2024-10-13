@@ -27,7 +27,8 @@ function Body(){
 
                 <p>
                     Process for recruitment of research fellows:  
-                    <a className='genlink' href="https://docs.google.com/document/d/1-KfDvnoKxYyn4BObSQ1CwY9B7Q5rQXYy/edit?usp=sharing&ouid=101618871564262500186&rtpof=true&sd=true">
+                    <a className='genlink' 
+                    href="https://drive.google.com/file/d/1SNokpAmaCuFU_XtObTmthOe8zueSoRjW/view?usp=sharing">
                         Click Here
                     </a>
                 </p>
@@ -36,7 +37,8 @@ function Body(){
                 
                 <p>
                     Project approval and implementation process:  
-                    <a className='genlink' href="https://docs.google.com/document/d/1yChnx1cdkQiVi5v9R7dZsk_6rpwfgw-0/edit?usp=sharing&ouid=101618871564262500186&rtpof=true&sd=true">
+                    <a className='genlink' 
+                    href="https://drive.google.com/file/d/1if3jkKqyiNiRL7049fJRtgw-LQafU8o0/view?usp=sharing">
                         Click Here
                     </a>
                 </p>
