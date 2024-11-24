@@ -28,10 +28,10 @@ export default function Home() {
                     </p>
 
                     <div className='homeButtonCont'>
-                        <a href="/resources"> <button className='homeButton button'>Research Topics</button> </a>
+                        <a href="/resources"> <button className='homeButton button'>Resources</button> </a>
                         <a target='blank' href="https://trello.com/"> <button className='homeButton button'>Trello</button> </a>
                     </div>
-
+                    
                 </div>
 
                 <div className="homeRight">
