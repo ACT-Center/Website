@@ -253,8 +253,6 @@ a {
 
 
 /*three*/
-
-
 .posterimg{
     position: absolute;
     margin-left: -200px;
@@ -295,11 +293,27 @@ a {
     font-size: 1.5rem;
 }
 
+@media screen and (max-width: 620px){
+
+    .homePoster{
+        padding: 0px 40px;
+        padding-top: 90px;
+        display: flex;
+    }
+    .homePoster > blockquote{
+        font-size: 1.2rem;
+    }
+    
+    .homePoster > blockquote > span{
+        font-size: 1rem;
+    }
+
+}
+
 
 
 
 /*four*/
-
 .homeVideos {
     /* height: 200vh; */
     background-color: var(--lightbg);
