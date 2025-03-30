@@ -1,0 +1,73 @@
+.opening{
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    border-left: 4px solid rgb(126, 79, 255);
+    padding: 30px 50px;
+    margin-bottom: 50px;
+
+    overflow: hidden;
+    transition-duration: 300ms;
+    
+}
+
+.opening::after{
+
+    top: 0;
+    left: -100%;
+    content: '';
+    z-index: -1;
+    position: absolute;
+
+    background-color: rgb(126, 79, 255);
+    height: 100%;
+    width: 100%;
+
+    transition-duration: 300ms;
+
+}
+
+.opening:hover{
+    color: white;
+}
+.opening:hover::after{
+    left: 0;
+}
+
+.opening > div:nth-child(1){
+    flex-grow: 1;
+}
+
+.apply{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(126, 79, 255);
+    color: white;
+
+    height: fit-content;
+    padding: 15px 100px;
+    border-radius: 30px;
+
+    transition-delay: 100ms;
+}
+
+.opening:hover > * > .apply{
+
+    background-color: white;
+    color: rgb(126, 79, 255);
+
+}
+
+.apply{
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.apply:hover{
+    scale: 1.05;
+}

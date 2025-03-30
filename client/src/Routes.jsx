@@ -5,13 +5,13 @@ import NavBar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Aboutus from "./pages/Aboutus/Aboutus";
 import Support from "./pages/Support/Support";
-import Evaluation from "./pages/Evaluation/Evaluation";
 import Contact from "./pages/Contact/Contact";
 import Submission from "./pages/Submission/Submission";
 import Resources from "./pages/Resources/Resources";
 import ExProjects from "./pages/ExProjects/ExProjects";
 import Biblo from "./pages/Biblo/Biblo";
-import Guidelines from "./pages/Guidelines/Guidelines";
+import Projects from "./pages/Projects/Projects.jsx";
+import Openings from "./pages/Openings/Openings";
 
 const AppRoute = () => {
   return (
@@ -26,9 +26,9 @@ const AppRoute = () => {
           <Route path="/Resources" element={<Resources/>}/>
           <Route path="/Contact" element={<Contact/>}/>
           <Route path="/Submission" element={<Submission />}/>
-          <Route path="/Guidelines" element={<Guidelines />}/>
+          <Route path="/Projects" element={<Projects />}/>
+          <Route path="/Openings" element={<Openings />}/>
           <Route path="/Support" element={<Support/>}/>
-          <Route path="/Evaluation" element={<Evaluation/>}/>
           <Route path="/Examples" element={<ExProjects/>}/>
           <Route path="/biblo" element={<Biblo/>}/>
           <Route path="*"/>

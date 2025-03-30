@@ -25,7 +25,7 @@ export default function NavBar() {
                 <a className='ourNavMenuItem' href='/'>Home</a>
                 <a className='ourNavMenuItem' href='/about'>About</a>
                 <a className='ourNavMenuItem' href='resources'>Resources</a>
-                <a className='ourNavMenuItem' href='/submission'>Submission</a>
+                <a className='ourNavMenuItem' href='/submission'>Submissions</a>
                 <a className='ourNavMenuItem' href='/guidelines'>Guidelines</a>
                 {/* <a className='ourNavMenuItem' href='/support'>Support</a> */}
                 <a className='ourNavMenuItem' href='/evaluation'>Evaluation</a>
@@ -44,10 +44,12 @@ export default function NavBar() {
                 <a className='ourNavMenuItem' href='/'>Home</a>
                 <a className='ourNavMenuItem' href='/about'>About</a>
                 <a className='ourNavMenuItem' href='resources'>Resources</a>
-                <a className='ourNavMenuItem' href='/submission'>Submission</a>
-                <a className='ourNavMenuItem' href='/guidelines'>Guidelines</a>
+                <a className='ourNavMenuItem' href='/submission'>Submissions</a>
+                <a className='ourNavMenuItem' href='/submission'>Projects</a>
+                <a className='ourNavMenuItem' href='/submission'>Openings</a>
+                {/* <a className='ourNavMenuItem' href='/guidelines'>Guidelines</a> */}
                 {/* <a className='ourNavMenuItem' href='/support'>Support</a> */}
-                <a className='ourNavMenuItem' href='/evaluation'>Evaluation</a>
+                {/* <a className='ourNavMenuItem' href='/evaluation'>Evaluation</a> */}
                 <a className='ourNavMenuItem' href='/contact'>Contact</a>
             </div>
         </div>
