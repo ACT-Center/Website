@@ -45,8 +45,8 @@ export default function NavBar() {
                 <a className='ourNavMenuItem' href='/about'>About</a>
                 <a className='ourNavMenuItem' href='resources'>Resources</a>
                 <a className='ourNavMenuItem' href='/submission'>Submissions</a>
-                <a className='ourNavMenuItem' href='/submission'>Projects</a>
-                <a className='ourNavMenuItem' href='/submission'>Openings</a>
+                <a className='ourNavMenuItem' href='/Projects'>Projects</a>
+                <a className='ourNavMenuItem' href='/Openings'>Openings</a>
                 {/* <a className='ourNavMenuItem' href='/guidelines'>Guidelines</a> */}
                 {/* <a className='ourNavMenuItem' href='/support'>Support</a> */}
                 {/* <a className='ourNavMenuItem' href='/evaluation'>Evaluation</a> */}
