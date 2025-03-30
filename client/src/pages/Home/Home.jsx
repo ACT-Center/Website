@@ -1,28 +1,44 @@
 import React from 'react'
 import "./Home.css"
 
+import { TypeAnimation } from "react-type-animation";
+import { useParallax } from 'react-scroll-parallax';
+
 import Health from "./Assets/Health.png"
 import Environment from "./Assets/Environment.png"
 import Learning from "./Assets/Learning.png"
 
-import rahul from "../../assets/rahul.jpeg"
-import chairman from "../../assets/chairman.webp"
-import brandon from "../../assets/brandon.jpg"
-import santha from "../../assets/santhakumari.jpg"
-import vinay from "../../assets/Vinay.jpg"
+import bg from "../../assets/landingBG1.jpg"
+
+import Team from '../../components/Team/Team';
 
 export default function Home() {
 
+    const {ref: r1} = useParallax({ speed: 20 })
+    const {ref: r2} = useParallax({ translateX: [-20, 20] })
+    const {ref: r3} = useParallax({ translateX: [20, -20] })
+    const {ref: r4} = useParallax({ translateX: [-5, 0] })
+    
     return (
         <div className="home">
             <div className='hero'>
+
+                <div className="herobg" ref={r1}></div>
                 <div className="homeLeft">
-                    <h1>
-                        ACT
-                    </h1>
-                    <h3>
-                        ART | COGNITION | TECHNOLOGY
-                    </h3>
+                    <TypeAnimation
+                        sequence={[
+                            'Art',
+                            2000,
+                            'Cognition',
+                            2000,
+                            'Technology',
+                            2000,
+                        ]}
+                        wrapper="h1"
+                        speed={50}
+                        style={{ display: 'inline-block' }}
+                        repeat={Infinity}
+                    />
                     <p>
                         The ACT Centre envisions a future where trans-disciplinary collaboration is not just encouraged but embedded in our educational and research culture.
                     </p>
@@ -31,9 +47,8 @@ export default function Home() {
                         <a href="/resources"> <button className='homeButton button'>Resources</button> </a>
                         <a target='blank' href="https://trello.com/"> <button className='homeButton button'>Trello</button> </a>
                     </div>
-                    
-                </div>
 
+                </div>
                 <div className="homeRight">
                     <div className="submissionCall">
                         <h2>Call for Submissions!</h2>
@@ -45,6 +60,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <div className="homeInterestAreas" id='kuchto'>
@@ -53,22 +69,22 @@ export default function Home() {
                 <h1>Areas Of Interest</h1>
 
                 <div className="homeInterestAreaCont">
-                    <div className="homeInterestArea">
+                    <div className="homeInterestArea" ref={r2}>
                         <img src={Health} alt="" />
-                        <h3>Health and <br /> Well-being</h3>
+                        <h3>Health and Well-being</h3>
                         <p>Unraveling health disparities, innovative healthcare delivery, and the development of interventions to enhance overall well-being.</p>
                     </div>
 
                     <div className="homeInterestArea">
                         <img src={Environment} alt="" />
                         <h3>Environment, Energy and Sustainability</h3>
-                        <p>Exploration of sustainable solutions to environmental challenges, including energy      conservation, biodiversity preservation, and mitigation of climate change impacts.</p>
+                        <p>Exploration of sustainable solutions to environmental challenges, including biodiversity preservation, and mitigation of climate change impacts.</p>
                     </div>
 
-                    <div className="homeInterestArea">
+                    <div className="homeInterestArea" ref={r3}>
                         <img src={Learning} alt="" />
                         <h3>Learning and Pedagogy</h3>
-                        <p>Investigating novel methods and strategies to advance education and pedagogical practices, with a focus on improving learning outcomes and fostering lifelong learning.</p>
+                        <p>Investigating novel methods and strategies to advance education and pedagogical practices, with a focus on fostering lifelong learning.</p>
                     </div>
                 </div>
 
@@ -80,12 +96,14 @@ export default function Home() {
             </div>
 
             <div className="homePoster">
+                
+                <img src={bg} className='posterimg' ref={r4} />
 
-            <blockquote>
-                Education is not the learning of facts, <br /> 
-                but the training of the mind to think! <br />
-                <span>-- Albert Einstein</span>
-            </blockquote>
+                <blockquote>
+                    Education is not the learning of facts, <br />
+                    but the training of the mind to think! <br />
+                    <span>-- Albert Einstein</span>
+                </blockquote>
 
             </div>
 
@@ -118,76 +136,7 @@ export default function Home() {
             </div>
 
 
-            <div className="homeTeam">
-
-                <div>
-                    <h1>Meet Our Team</h1>
-                    <h6>The Force Behind ACT Centre and TSLAS at TIET</h6>
-                </div>
-
-                <div className='homeTeamCont'>
-
-                    <a target="_blank" href="https://tslas.thapar.edu/facultymaster/71">
-                        <div className="homeTeamMember">
-                            <img src={chairman} alt="" />
-                            <h3>Dr. Efthymios Constantinides</h3>
-                            <h6>Chair, ACT Centre</h6>
-                            <h6>Professor, TSLAS</h6>
-                        </div>
-                    </a>
-
-                    <a target="_blank" href="https://tslas.thapar.edu/facultymaster/26">
-                        <div className="homeTeamMember">
-                            <img src={santha} alt="" />
-                            <h3>Dr. Santha Kumari</h3>
-                            <h6>Program Chair & Head, TSLAS</h6>
-                            <h6>Professor, TSLAS</h6>
-                        </div>
-                    </a>
-
-                    <a target="_blank" href="https://tslas.thapar.edu/facultymaster/25">
-                        <div className="homeTeamMember">
-                            <img src={vinay} alt="" />
-                            <h3>Dr. Vinay Kumar</h3>
-                            <h6>Associate Head, TSLAS</h6>
-                            <h6>Associate Professor, TIET</h6>
-                        </div>
-                    </a>
-
-                    <a target="_blank" href="https://tslas.thapar.edu/facultymaster/44">
-                        <div className="homeTeamMember">
-                            <img src={rahul} alt="" />
-                            <h3>Dr. Rahul Upadhyay</h3>
-                            <h6>Coordinator, ACT Centre</h6>
-                            <h6>Associate Professor, TIET</h6>
-                        </div>
-                    </a>
-
-                    <a target="_blank" href="https://tslas.thapar.edu/facultymaster/62">
-                        <div className="homeTeamMember">
-                            <img src={brandon} alt="" />
-                            <h3>Dr. T. Brandon Evans</h3>
-                            <h6>Coordinator, ACT Centre</h6>
-                            <h6>Assistant Professor, TSLAS</h6>
-                        </div>
-                    </a>
-
-                </div>
-
-                {/* <div className="homeTeamMember">
-                    <img src={santha} alt="" />
-                    <h3>Dr. Santha Kumari</h3>
-                    <h6>Program Chair & Head, TSLAS</h6>
-                    <h6>Professor, TSLAS</h6>
-                </div>
-
-                <div className="homeTeamMember">
-                    <img src={santha} alt="" />
-                    <h3>Dr. Santha Kumari</h3>
-                    <h6>Program Chair & Head, TSLAS</h6>
-                    <h6>Professor, TSLAS</h6>
-                </div> */}
-            </div>
+            <Team/>
         </div>
     )
 }
