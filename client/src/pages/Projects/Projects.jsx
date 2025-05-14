@@ -5,7 +5,7 @@ import projectList from "./Projects"
 export default function Projects() {
   return (
     <div>
-        <Main Heading="Ongoing Projects" SubHead="Examples of excellence" Body={Body()}/>
+        <Main Heading="Projects" SubHead="Examples of excellence" Body={Body()}/>
     </div>
   )
 }

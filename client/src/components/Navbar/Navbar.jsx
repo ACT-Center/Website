@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import "./NavBar.css"
-import { Outlet, Link } from 'react-router-dom';
 import logo from "../../assets/logo.webp"
 
 export default function NavBar() {
@@ -15,6 +14,23 @@ export default function NavBar() {
         }
     }
 
+    function NavMenuItems(){
+        return(
+            <>
+                <a className='ourNavMenuItem' href='/'>Home</a>
+                <a className='ourNavMenuItem' href='/about'>About</a>
+                <a className='ourNavMenuItem' href='resources'>Resources</a>
+                <a className='ourNavMenuItem' href='/submission'>Submissions</a>
+                <a className='ourNavMenuItem' href='/Projects'>Projects</a>
+                <a className='ourNavMenuItem' href='/Openings'>Openings</a>
+                {/* <a className='ourNavMenuItem' href='/guidelines'>Guidelines</a> */}
+                {/* <a className='ourNavMenuItem' href='/support'>Support</a> */}
+                {/* <a className='ourNavMenuItem' href='/evaluation'>Evaluation</a> */}
+                <a className='ourNavMenuItem' href='/contact'>Contact</a>
+            </>
+        )
+    }
+
     return (
         <>
         <div className="mobileMenu" style={{display: isMobile}}>
@@ -22,14 +38,7 @@ export default function NavBar() {
                 <span class="material-symbols-outlined" onClick={() => {mobileNavHandle()}}>cancel</span>
             </div>
             <div className="mobileMenuMenu">
-                <a className='ourNavMenuItem' href='/'>Home</a>
-                <a className='ourNavMenuItem' href='/about'>About</a>
-                <a className='ourNavMenuItem' href='resources'>Resources</a>
-                <a className='ourNavMenuItem' href='/submission'>Submissions</a>
-                <a className='ourNavMenuItem' href='/guidelines'>Guidelines</a>
-                {/* <a className='ourNavMenuItem' href='/support'>Support</a> */}
-                <a className='ourNavMenuItem' href='/evaluation'>Evaluation</a>
-                <a className='ourNavMenuItem' href='/contact'>Contact</a>
+                <NavMenuItems/>
             </div>
         </div>
         <div className='ourNavbar navbar-expand-lg'>
@@ -41,16 +50,7 @@ export default function NavBar() {
                 <span class="material-symbols-outlined">menu</span>
             </div>
             <div className="ourNavMenu">
-                <a className='ourNavMenuItem' href='/'>Home</a>
-                <a className='ourNavMenuItem' href='/about'>About</a>
-                <a className='ourNavMenuItem' href='resources'>Resources</a>
-                <a className='ourNavMenuItem' href='/submission'>Submissions</a>
-                <a className='ourNavMenuItem' href='/Projects'>Projects</a>
-                <a className='ourNavMenuItem' href='/Openings'>Openings</a>
-                {/* <a className='ourNavMenuItem' href='/guidelines'>Guidelines</a> */}
-                {/* <a className='ourNavMenuItem' href='/support'>Support</a> */}
-                {/* <a className='ourNavMenuItem' href='/evaluation'>Evaluation</a> */}
-                <a className='ourNavMenuItem' href='/contact'>Contact</a>
+                <NavMenuItems/>
             </div>
         </div>
         </>

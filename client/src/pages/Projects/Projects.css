@@ -1,6 +1,7 @@
 .project{
 
-    background-color: rgb(112, 73, 255);
+    background-color: rgb(76, 27, 255);
+    background-image: linear-gradient(120deg, rgb(76, 27, 255), rgb(217, 27, 255));
 
     transform: skewY(-2deg);
     
