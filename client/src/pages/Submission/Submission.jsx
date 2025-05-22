@@ -106,7 +106,7 @@ function Financing() {
     <>
       <h2>Financing</h2>
       <p>
-        The projects approved are eligible for a grant of up to Rs. 12.50 Lacs.
+        The projects approved are eligible for a grant (Subject to approval).
         The funding will cover costs occurring during the project: Lab
         equipment, survey costs, Etc{" "}
         <a target="_blank" href="https://drive.google.com/file/d/1-XCdLGfK2a0Y14lexTHVbJq6b6FXvYsG/view?usp=sharing" className="genlink">(Financial Assistance Document)</a>.
