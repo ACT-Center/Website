@@ -74,7 +74,7 @@ function Evaluation() {
 
       <p>
           <a className='genlink'
-            href="https://drive.google.com/file/d/1SNokpAmaCuFU_XtObTmthOe8zueSoRjW/view?usp=sharing">
+            href="./ProcessRecruitement.pdf">
             Process for recruitment of research fellows
           </a>
           &nbsp; | &nbsp;
