@@ -15,16 +15,15 @@ const Body = () => {
       <div className="body">
         <h1>Financing</h1>
         <p>
-          The projects approved are eligible for a grant of up to Rs. 12.50
-          Lacs. The funding will cover costs occurring during the project: Lab
+          The projects approved are eligible for a grants. The funding will cover costs occurring during the project: Lab
           equipment, survey costs, publication costs in open-source journals,
           etc. A detailed budget must be submitted together with the project
           proposal, mentioning also the fund requirements during different
-          stages of the project.
+          stages of the project. The funding is subject to approval only.
 
           <br />
           <br />
-          
+
           The cost reporting must be in line with the
           project stages, divided into 6-month periods, following the project
           timetable project time table submitted. The project budget does not
@@ -32,7 +31,7 @@ const Body = () => {
 
           <br />
           <br />
-          
+
           We must agree on what is
           not covered by these costs; For example, participation in a conference
           can be discussed. Also publication costs in open-source journals
