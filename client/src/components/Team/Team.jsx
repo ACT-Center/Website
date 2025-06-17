@@ -25,15 +25,6 @@ export default function Team() {
                     </div>
                 </a>
 
-                <a target="_blank" href="https://tslas.thapar.edu/facultymaster/26">
-                    <div className="homeTeamMember">
-                        <img src={santha} alt="" />
-                        <h3>Dr. Santha Kumari</h3>
-                        <h6>Program Chair & Head, TSLAS</h6>
-                        <h6>Professor, TSLAS</h6>
-                    </div>
-                </a>
-
                 <a target="_blank" href="https://tslas.thapar.edu/facultymaster/25">
                     <div className="homeTeamMember">
                         <img src={vinay} alt="" />
