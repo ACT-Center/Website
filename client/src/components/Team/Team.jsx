@@ -38,7 +38,7 @@ export default function Team() {
                     <div className="homeTeamMember">
                         <img src={rahul} alt="" />
                         <h3>Dr. Rahul Upadhyay</h3>
-                        <h6>Coordinator, ACT Centre</h6>
+                        <h6>Head, ACT Centre</h6>
                         <h6>Associate Professor, TIET</h6>
                     </div>
                 </a>
