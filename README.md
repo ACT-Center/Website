@@ -1,0 +1,38 @@
+# ACT - Project Name
+
+Welcome to the ACT project repository. This is a React-based web application built for [Purpose of the site, e.g., Academic/Research Institute Website].
+
+## Quick Start
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+For more detailed instructions, see the [Development Guide](docs/DEVELOPMENT.md).
+
+## Project Overview
+
+This project uses modern web technologies to deliver a fast and responsive user experience.
+- **Frontend**: React 19, Vite
+- **Routing**: React Router
+- **Linting**: ESLint, Stylelint
+
+## Documentation
+
+We have detailed documentation available in the `docs/` directory:
+
+- [**Architecture**](docs/ARCHITECTURE.md): Learn about the folder structure, key technologies, and architectural decisions.
+- [**Development Guide**](docs/DEVELOPMENT.md): Setup instructions, coding standards, and how to contribute.
+
+## Structure
+The core application logic lives in `src/`.
+- `components/`: Reusable UI components (Navbar, Footer).
+- `pages/`: Individual route components.
+- `hooks/` & `utils/`: Helper logic.
+
+## Contributing
+Please refer to the [Development Guide](docs/DEVELOPMENT.md) for information on how to add new pages and components.

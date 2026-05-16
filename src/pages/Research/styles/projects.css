@@ -1,0 +1,330 @@
+/* ================================
+   THEME CARD TAG STYLES
+   ================================ */
+
+.research-theme-tag {
+  height: 1rem;
+  font-size: 0.75rem;
+  opacity: 0.65;
+  text-transform: uppercase;
+}
+
+.research-theme-card h4 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.research-theme-card p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  flex-grow: 1;
+}
+
+/* ================================
+   IDEA CLUSTERS
+   ================================ */
+
+.research-areas-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.1fr);
+  gap: 1.6rem;
+  align-items: flex-start;
+}
+
+.research-areas-list {
+  display: grid;
+  padding: 0.25rem 0.5rem;
+  padding-left: 1.2rem;
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.research-highlight-card h4 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+}
+
+.research-highlight-card p {
+  margin: 0 0 0.45rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* ================================
+   ONGOING PROJECTS
+   ================================ */
+
+.research-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+  grid-auto-rows: 1fr; /* Equal height rows */
+}
+
+/* Carousel Styles */
+.carousel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.carousel-btn {
+  background: white;
+  border: 1px solid var(--color-border);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-text);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.carousel-btn:hover {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.research-projects-carousel-wrapper {
+  position: relative;
+  margin: 0 -1rem;
+  padding: 0 1rem;
+}
+
+.carousel-grid {
+  display: flex !important;
+  grid-template-columns: none !important;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 1.5rem;
+  padding: 0.5rem 0.25rem 1.5rem;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.carousel-grid::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.carousel-grid .research-project-card {
+  flex: 0 0 350px;
+  scroll-snap-align: start;
+}
+
+@media (max-width: 768px) {
+  .carousel-grid .research-project-card {
+    flex: 0 0 280px;
+  }
+}
+
+.research-project-card {
+  padding: 1.1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.research-project-card .btn {
+  margin-top: auto;
+}
+
+.research-project-status {
+  font-size: 0.78rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  display: inline-flex;
+  margin-bottom: 0.45rem;
+  flex-shrink: 0;
+  width: fit-content;
+}
+
+.research-status-ongoing {
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--color-success);
+}
+
+.research-project-card h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.research-project-meta {
+  font-size: 0.82rem;
+  opacity: 0.75;
+  margin-bottom: 0.5rem;
+  flex-shrink: 0;
+}
+
+.research-project-meta span {
+  font-weight: 600;
+}
+
+.research-project-text {
+  font-size: 0.92rem;
+  opacity: 0.9;
+  flex-grow: 1;
+}
+
+.research-project-extra {
+  font-size: 0.82rem;
+  opacity: 0.75;
+  margin-top: 0.45rem;
+}
+
+/* ================================
+   COMPLETED PROJECTS
+   ================================ */
+
+.research-completed-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.1fr);
+  gap: 1.4rem;
+}
+
+.research-completed-list {
+  padding-left: 1.2rem;
+  display: grid;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.research-completed-note {
+  font-size: 0.88rem;
+  opacity: 0.9;
+}
+
+/* ================================
+   PROJECT IMAGE
+   ================================ */
+
+.research-project-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+  margin-bottom: 0.75rem;
+}
+
+.project-image-fallback {
+  width: 100%;
+  height: 160px;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(135deg, var(--color-surface-raised, #f0f4ff) 0%, var(--color-surface, #e8edf8) 100%);
+}
+
+/* ================================
+   MODAL OVERLAY
+   ================================ */
+
+.research-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* Ensure it stays on top of everything */
+}
+
+/* Modal box */
+.research-modal {
+  background: #ffffff;
+  max-width: 600px;
+  width: 90%;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  position: relative;
+  animation: modalFadeIn 250ms ease-out;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.research-modal h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.research-modal-meta {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.research-modal-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+/* Close button */
+.research-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.05);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  transition: all 0.2s;
+}
+
+.research-modal-close:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--color-text);
+}
+
+.research-modal-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}

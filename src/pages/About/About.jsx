@@ -1,0 +1,395 @@
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./About.css";
+import "../../styles/people-shared.css";
+import useRevealOnScroll from "../../hooks/useRevealOnScroll";
+
+/* ======================================================
+   PEOPLE DATA
+   ====================================================== */
+
+const peopleData = [
+  {
+    name: "Dr. Efthymios Constantinides",
+    role: "Chair",
+    affiliation: "ACT Centre Professor, TSLAS",
+    group: "Core Faculty",
+    avatar: "/media/EC.jpg",
+  },
+  {
+    name: "Dr. Vinay Kumar",
+    role: "Dean",
+    affiliation: "Professor, TSLAS, TIET",
+    group: "Core Faculty",
+    avatar: "/media/Vinay.jpeg",
+  },
+  {
+    name: "Dr. Rahul Upadhyay",
+    role: "Head",
+    affiliation: "ACT Centre Associate Professor, TIET",
+    group: "Core Faculty",
+    avatar: "/media/rahul.jpeg",
+  },
+  {
+    name: "Dr. T. Brandon Evans",
+    role: "Coordinator",
+    affiliation: "ACT Centre Associate Professor, TSLAS",
+    group: "Core Faculty",
+    avatar: "/media/brandon.jpg",
+  },
+  {
+    name: "Dr. Tanvi Dovedi",
+    role: "Research Faculty",
+    affiliation: "ACT Centre",
+    group: "Research Faculty",
+    avatar: "/media/tanvi.jpeg",
+  },
+  {
+    name: "Dr. Manvir Kaur",
+    role: "Research Faculty",
+    affiliation: "ACT Centre",
+    group: "Research Faculty",
+    avatar: "/media/manvir.jpg",
+  },
+  {
+    name: "Ms. Himanshi Upadhyay",
+    role: "Research Scholar",
+    affiliation: "ACT Centre",
+    group: "Research Scholars",
+    avatar: "/media/himanshi.jpeg",
+  },
+  {
+    name: "Mr. Kunal Gupta",
+    role: "Research Associate",
+    affiliation: "ACT Centre",
+    group: "Research Team",
+    avatar: "/media/Kunal.jpeg",
+  },
+];
+
+const structureCards = [
+  {
+    title: "Core Leadership",
+    body:
+      "A core leadership team provides strategic direction, approves calls for proposals, and oversees the overall functioning of the centre.",
+    note:
+      "Details of leadership roles and committees are listed in the Directory section below.",
+  },
+  {
+    title: "Evaluation & Advisory",
+    body:
+      "Proposals are reviewed using a structured evaluation framework, with feedback provided to applicants. External expertise may be invited where appropriate.",
+    list: [
+      "Structured scoring and qualitative assessment",
+      "Conflict-of-interest safeguards",
+      "Transparent communication of outcomes",
+    ],
+  },
+  {
+    title: "Operations & Labs",
+    body:
+      "Operations teams manage shared facilities, equipment access, financial workflows, and reporting requirements, enabling researchers to focus on their work.",
+  },
+];
+
+const howCards = [
+  {
+    title: "From Idea to Proposal",
+    text:
+      "Teams begin with societally relevant questions, refine ideas through cross-disciplinary discussion, and prepare proposals using ACT templates and guidelines.",
+  },
+  {
+    title: "Implementation & Reporting",
+    text:
+      "Approved projects follow defined processes for recruitment, procurement, progress review, and final reporting, in line with institute norms.",
+  },
+  {
+    title: "Impact & Engagement",
+    text:
+      "Where appropriate, ACT encourages dissemination through publications, events, tools, and public or policy-facing engagement.",
+  },
+];
+
+const About = () => {
+  useEffect(() => {
+    document.title = "About — ACT Centre";
+  }, []);
+
+  const [missionRef, missionVisible] = useRevealOnScroll();
+  const [structureRef, structureVisible] = useRevealOnScroll();
+  const [howRef, howVisible] = useRevealOnScroll();
+  const [rolesRef, rolesVisible] = useRevealOnScroll();
+  const [directoryRef, directoryVisible] = useRevealOnScroll();
+
+  return (
+    <main className="about-page" id="about">
+      {/* ================= HERO ================= */}
+      <section
+        className="page-hero about-hero section--bg-campus"
+        role="region"
+        aria-label="About the ACT Centre"
+      >
+        <img
+          src="/media/about.jpg"
+          alt=""
+          aria-hidden="true"
+          className="about-hero-bg"
+        />
+
+        <div className="about-hero-overlay" aria-hidden />
+
+        <div className="container about-hero-layout">
+          <div className="about-hero-text">
+            <h1 className="about-hero-title hero-animate hero-delay-1">
+              About the ACT Centre
+            </h1>
+
+            <p className="about-hero-subtitle hero-animate hero-delay-2">
+              The ACT Centre is a transdisciplinary research initiative at{" "}
+              <strong>Thapar Institute of Engineering and Technology</strong>,
+              bringing together engineering, cognitive science, social sciences,
+              and the humanities to address complex real-world challenges.
+            </p>
+
+            <p className="about-hero-subtitle secondary hero-animate hero-delay-3">
+              ACT supports research questions that cannot be effectively
+              addressed within a single discipline, through shared
+              infrastructure, structured funding, and collaborative processes.
+            </p>
+
+            <div className="page-hero-actions hero-animate hero-delay-4">
+              <Link to="/research" className="btn btn-primary">
+                Explore Research Themes
+              </Link>
+              <Link to="/funding" className="btn btn-secondary">
+                View Funding Opportunities
+              </Link>
+            </div>
+          </div>
+
+          <aside className="about-hero-info hero-animate hero-delay-5">
+            <h3 className="about-hero-info-title">At a Glance</h3>
+            <p className="about-hero-info-text">
+              Bridging the gap between technological innovation and human
+              experience.
+            </p>
+            <ul className="about-hero-bullets">
+              <li>10+ Sanctioned Projects</li>
+              <li>Shared Research Labs</li>
+              <li>Interdisciplinary Teams</li>
+            </ul>
+            <Link to="/contact" className="link-animated">
+              Get in Touch
+            </Link>
+          </aside>
+        </div>
+      </section>
+
+      {/* ================= MAIN CONTENT ================= */}
+      <section className="section about-main" aria-labelledby="mission-heading">
+        <div className="container">
+          {/* Mission / Vision / Values */}
+          <section
+            id="mission"
+            ref={missionRef}
+            className={`about-block about-block-band reveal-section ${
+              missionVisible ? "is-visible" : ""
+            }`}
+          >
+            <div className="about-block-header">
+              <h2 id="mission-heading" className="about-block-title">
+                Mission, Vision &amp; Values
+              </h2>
+            </div>
+
+            <div className="about-mvv-grid">
+              <article className="about-mvv-card card card-tint-blue stagger-1">
+                <h3>Mission</h3>
+                <p>
+                  To enable rigorous, collaborative research that integrates
+                  technological and human sciences to generate academic and
+                  societal value.
+                </p>
+              </article>
+
+              <article className="about-mvv-card card card-tint-violet stagger-2">
+                <h3>Vision</h3>
+                <p>
+                  To establish ACT as a recognised hub for applied cognition and
+                  technology within the institute and beyond.
+                </p>
+              </article>
+
+              <article className="about-mvv-card card card-centered stagger-3">
+                <h3>Values</h3>
+                <ul>
+                  <li>Collaboration across disciplines by design.</li>
+                  <li>Academic rigor combined with real-world relevance.</li>
+                  <li>Ethical responsibility, inclusion, and transparency.</li>
+                  <li>Openness to critique, iteration, and learning.</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          {/* Governance & Structure */}
+          <section
+            id="structure"
+            ref={structureRef}
+            className={`about-block about-block-soft reveal-section ${
+              structureVisible ? "is-visible" : ""
+            }`}
+          >
+            <div className="about-block-header">
+              <h2 className="about-block-title">Governance &amp; Structure</h2>
+            </div>
+
+            <div className="about-structure-grid">
+              {structureCards.map((card, i) => (
+                <article
+                  key={i}
+                  className={`about-structure-card card stagger-${(i % 3) + 1}`}
+                >
+                  <h3>{card.title}</h3>
+                  <p>{card.body}</p>
+                  {card.note && (
+                    <p className="about-structure-note">{card.note}</p>
+                  )}
+                  {card.list && (
+                    <ul>
+                      {card.list.map((li, idx) => (
+                        <li key={idx}>{li}</li>
+                      ))}
+                    </ul>
+                  )}
+                </article>
+              ))}
+            </div>
+          </section>
+
+          {/* How we work */}
+          <section
+            id="how"
+            ref={howRef}
+            className={`about-block reveal-section ${
+              howVisible ? "is-visible" : ""
+            }`}
+            aria-labelledby="how-heading"
+          >
+            <div className="about-block-header">
+              <h2 id="how-heading" className="about-block-title">
+                How ACT Projects Work
+              </h2>
+            </div>
+
+            <div className="about-how-grid">
+              {howCards.map((c, i) => (
+                <article
+                  key={i}
+                  className={`about-how-card card stagger-${(i % 3) + 1}`}
+                >
+                  <h3>{c.title}</h3>
+                  <p>{c.text}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          {/* People & Roles */}
+          <section
+            ref={rolesRef}
+            className={`about-block about-block-band reveal-section ${
+              rolesVisible ? "is-visible" : ""
+            }`}
+          >
+            <div className="people-block-header">
+              <h2 className="people-block-title">People &amp; Roles</h2>
+              <p className="people-block-subtitle">
+                ACT brings together leadership, faculty, researchers, and
+                scholars to support high-impact research and collaboration.
+              </p>
+            </div>
+
+            <div className="people-overview-grid">
+              <article className="people-overview-card card stagger-1">
+                <h3>Core Leadership &amp; Faculty</h3>
+                <p>
+                  Provide strategic direction, governance, and academic
+                  leadership for the Centre.
+                </p>
+              </article>
+
+              <article className="people-overview-card card stagger-2">
+                <h3>Research Faculty</h3>
+                <p>
+                  Lead and contribute to funded projects, mentoring students and
+                  advancing ACT research themes.
+                </p>
+              </article>
+
+              <article className="people-overview-card card stagger-3">
+                <h3>Research Scholars &amp; Associates</h3>
+                <p>
+                  Conduct studies, build prototypes, analyse data, and support
+                  project execution.
+                </p>
+              </article>
+
+              <article className="people-overview-card card stagger-4">
+                <h3>Operations &amp; Support</h3>
+                <p>
+                  Coordinate facilities, funding processes, and administrative
+                  workflows.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          {/* Directory */}
+          <section
+            id="directory"
+            ref={directoryRef}
+            className={`about-block about-block-soft reveal-section ${
+              directoryVisible ? "is-visible" : ""
+            }`}
+          >
+            <div className="people-block-header people-block-header--tight">
+              <h2 className="people-block-title">Directory</h2>
+            </div>
+
+            <div className="people-grid">
+              {peopleData.map((p, i) => (
+                <article
+                  key={i}
+                  className={`people-card card stagger-${(i % 4) + 1}`}
+                >
+                  {p.avatar ? (
+                    <img
+                      src={p.avatar}
+                      alt={p.name}
+                      className="people-avatar-img"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="people-avatar-placeholder">
+                      {p.name.charAt(0)}
+                    </div>
+                  )}
+
+                  <span className="people-badge">{p.group}</span>
+
+                  <h3 className="people-name">{p.name}</h3>
+                  <p className="people-role">{p.role}</p>
+
+                  <p className="people-interests">{p.affiliation}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  );
+};
+
+export default About;
