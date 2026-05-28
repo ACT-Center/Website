@@ -200,8 +200,14 @@ const Research = () => {
                     <h4>{project.shortTitle}</h4>
 
                     <p className="research-project-meta">
-                      <span>Faculty:</span> {project.faculty}
+                      <span>PI:</span> {project.pi}
                     </p>
+
+                    {project.coPIs && project.coPIs.length > 0 && (
+                      <p className="research-project-meta">
+                        <span>Co-PI{project.coPIs.length > 1 ? "s" : ""}:</span> {project.coPIs.join(", ")}
+                      </p>
+                    )}
 
                     <p className="research-project-text">
                       {project.shortDescription}
@@ -212,7 +218,8 @@ const Research = () => {
                       onClick={() =>
                         setActiveProject({
                           title: project.title,
-                          faculty: project.faculty,
+                          pi: project.pi,
+                          coPIs: project.coPIs,
                           description: project.description,
                           image: project.image,
                         })
@@ -266,7 +273,8 @@ const Research = () => {
                     onClick={() =>
                       setActiveProject({
                         title: project.title,
-                        faculty: project.faculty,
+                        pi: project.faculty,
+                        coPIs: [],
                         description: project.description,
                         image: project.image,
                       })
@@ -306,8 +314,14 @@ const Research = () => {
                 <h3>{activeProject.title}</h3>
 
                 <p className="research-modal-meta">
-                  <strong>Faculty:</strong> {activeProject.faculty}
+                  <strong>PI:</strong> {activeProject.pi}
                 </p>
+
+                {activeProject.coPIs && activeProject.coPIs.length > 0 && (
+                  <p className="research-modal-meta">
+                    <strong>Co-PI{activeProject.coPIs.length > 1 ? "s" : ""}:</strong> {activeProject.coPIs.join(", ")}
+                  </p>
+                )}
 
                 <p className="research-modal-text">
                   {activeProject.description}
