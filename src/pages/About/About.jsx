@@ -51,18 +51,12 @@ const peopleData = [
     group: "Research Faculty",
     avatar: "/media/manvir.jpg",
   },
-  {
-    name: "Ms. Himanshi Upadhyay",
-    role: "Research Scholar",
-    affiliation: "ACT Centre",
-    group: "Research Scholars",
-    avatar: "/media/himanshi.jpeg",
-  },
+  
   {
     name: "Mr. Kunal Gupta",
-    role: "Research Associate",
+    role: "Website & Operations Associate",
     affiliation: "ACT Centre",
-    group: "Research Team",
+    group: "Website & Operations",
     avatar: "/media/Kunal.jpeg",
   },
 ];
